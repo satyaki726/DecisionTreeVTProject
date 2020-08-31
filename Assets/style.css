@@ -1,0 +1,148 @@
+body{
+    background-color: #0C021D;
+	color: #555;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:16px;
+	line-height: 1.6em;
+	margin:0;
+	padding:0;
+}
+.row{
+	width:80%;
+	margin:auto;
+	overflow: hidden;
+}
+#main-header{
+	background-color: coral;
+	color: #fff;
+	margin:0;
+}
+#main-header H1{
+    text-align:center;
+    margin:0;
+}
+#navbar{
+	background-color: #333;
+	color: #fff;
+}
+#navbar Ul{
+	pading:0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: -33px;
+	list-style: none;
+}
+
+#navbar A:hover{
+color:coral;
+}
+#navbar Li{
+	display: inline;
+	color:#fff;
+	text-decoration:none;
+	font-size: 18px;
+	padding-right:15px;
+}
+#navbar A{
+	color:#fff;
+	text-decoration:none;
+	font-size: 18px;
+	padding-right:15px;
+}
+#showcase{
+	background-image: url('https://tvsarawak.com/wp-content/uploads/2019/04/frrole_lead.gif');
+	background-repeat: no-repeat;
+	background-position: center ;
+	min-height: 300px;
+	margin-bottom:30px;
+	text-align: center;
+	background-size: 100%;
+}
+#showcase H1{
+	color:white;
+	font-size: 50px;
+	line-height: 1.6em;
+	padding-top: 20px;
+	margin=0;
+}
+
+H1{
+	color:white;
+	font-size: 50px;
+	line-height: 1.6em;
+	padding-top: 20px;
+	margin=0;
+}
+.col-md-6{
+	float: left;
+	width: 50%;
+	border:0;
+	padding: 10px;
+	box-sizing:border-box;
+}
+#button{
+     background-color: #0C021D;
+}
+.card-body1{
+    overflow: scroll;
+     height:500px;
+     width:550px;
+}
+.card-body2{
+     height:500px;
+     width:400px;
+}
+Button{
+	background-color: #333;
+	color: #fff;
+	padding: 10px 15px;
+	border:none;
+}
+Button:hover{
+	background-color: coral;
+	color:#fff;
+}
+#ned{
+    background-color: #0C021D;
+}
+#ut{
+    background-color: #0C021D;
+}
+#nt{
+    background-color: #0C021D;
+}
+#main-section{
+	float:left;
+	width:70%;
+	padding:0 30px;
+	box-sizing: border-box;
+}
+#sidebar{
+	float:right;
+	width:30%;
+	background:#333;
+	color:#fff;
+	padding: 10px;
+	text-size: 3px;
+	box-sizing: border-box;
+}
+#main-sec2{
+	float:left;
+	width:70%;
+	padding:0 30px;
+	box-sizing: border-box;
+}
+#sidebar2{
+    float:right;
+	width:30%;
+	background:#333;
+	color:#fff;
+	padding: 10px;
+	text-size: 3px;
+	box-sizing: border-box;
+}
+
+}
+.JNU{
+    margin-top:1500px;
+}

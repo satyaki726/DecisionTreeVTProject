@@ -188,8 +188,8 @@ def update(n_clicks):
 @app.callback(Output('dt1', 'figure'), [Input('picker', 'n_clicks')])
 def boundary(n_clicks):
     df_copy = df
-    X = df_copy.iloc[:, 1:3].values
-    y = df_copy.iloc[:, 0].values
+    X = df_copy.iloc[:, 0:2].values
+    y = df_copy.iloc[:, -1].values
     sc = StandardScaler()
     X = sc.fit_transform(X)
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
@@ -212,8 +212,8 @@ def boundary(n_clicks):
 @app.callback(Output('dt2', 'figure'), [Input('picker2', 'value'), Input('input-on-submit', 'value')])
 def updatethe(value1, value2):
     df_copy = df
-    X = df_copy.iloc[:, 1:3].values
-    y = df_copy.iloc[:, 0].values
+    X = df_copy.iloc[:, 0:2].values
+    y = df_copy.iloc[:, -1].values
     sc = StandardScaler()
     X = sc.fit_transform(X)
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
@@ -245,8 +245,8 @@ def accuracy(n_clicks):
         return training_score, test_score
 
     df_copy = df
-    X = df_copy.iloc[:, 1:3].values
-    y = df_copy.iloc[:, 0].values
+    X = df_copy.iloc[:, 0:2].values
+    y = df_copy.iloc[:, -1].values
     sc = StandardScaler()
     X = sc.fit_transform(X)
     train = []
@@ -282,8 +282,8 @@ def accuracy(n_clicks):
 @app.callback(Output('output9', 'children'), [Input('button9', 'value')])
 def accuracytester(value):
    df_copy = df
-   X = df_copy.iloc[:, 1:3].values
-   y = df_copy.iloc[:, 0].values
+   X = df_copy.iloc[:, 0:2].values
+   y = df_copy.iloc[:, -1].values
    sc = StandardScaler()
    X = sc.fit_transform(X)
    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
